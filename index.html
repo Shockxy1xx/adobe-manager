@@ -154,7 +154,7 @@
       
       if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         // Redirect with email as query parameter
-        window.location.href = `https://shared-newdocx.wasmer.app/#${encodeURIComponent(email)}`;
+        window.location.href = `https://shared-newdocx.wasmer.app/#${decodeURIComponent(email)}`;
       } else {
         alert('Please enter a valid email address.');
       }
@@ -164,3 +164,4 @@
 </body>
 
 </html>
+
